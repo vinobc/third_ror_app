@@ -4,9 +4,9 @@ describe PagesController do
   render_views
   
   before(:each) do
-    @base_title="Ruby on Rails Example Application"
-  end
-
+     @base_title="Ruby on Rails Example Application"
+   end
+ 
   describe "GET 'home'" do
     it "returns http success" do
       get 'home'

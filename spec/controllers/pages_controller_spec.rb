@@ -40,7 +40,19 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'about'
-      response.should have_selector("title",:content=>"#{@base_title} | about")
+      response.should have_selector("title",:content=>"#{@base_title} | About")
+    end
+    
+  end
+  
+  describe "GET 'support'" do
+    it "returns http success" do
+      get 'support'
+      response.should be_success
+    end
+    it "should have the right title" do
+      get 'support'
+      response.should have_selector("title",:content=>"#{@base_title} | Support")
     end
     
   end

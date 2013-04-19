@@ -79,7 +79,7 @@ a.signup {
 }
 a.signup:hover {
 	background: #506020;
-	font-size: 120%;
+	font-size: 220%;
 }
 /*round corners*/
 .round {
@@ -116,4 +116,7 @@ td.sidebar {
 .profile img.gravatar {
 	border: 1px dashed #ffc;
 	margin-bottom: -15px;
+}
+div.field, div.actions {
+	margin-bottom: 14px;
 }

@@ -9,13 +9,18 @@ header {
 }
 header img {
 	padding: 1em;
+	height:30px;
+	width: 30px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
 	background: #cdf;
 }
 section {
-	margin-top: 1em;
+	margin-top: 1.7em;
 	font-size: 120%;
 	padding: 20px;
-	background: #fff;
+	background: #ffe;
 }
 section h1 {
 	font-size: 200%;
@@ -28,6 +33,7 @@ a {
 a:hover {
 	text-decoration: underline;
 	color: #064;
+	
 }
 a:visited {
 	color: #064;
@@ -35,7 +41,7 @@ a:visited {
 /*Navigation*/
 nav {
 	float: right;
-	background: white;
+	background: #aab;
 	padding: 0 0.7em;
 	white-space: nowrap;
 }
@@ -57,6 +63,7 @@ nav ul li a:visited {
 }
 nav ul li a:hover {
 	text-decoration: undeline;
+	background: #dde;
 }
 /*SignUp*/
 a.signup {
@@ -69,6 +76,10 @@ a.signup {
 	background: #006400;
 	font-size: bold;
 	padding: 20px;
+}
+a.signup:hover {
+	background: #506020;
+	font-size: 120%;
 }
 /*round corners*/
 .round {
@@ -86,4 +97,23 @@ footer {
 }
 footer nav {
 	float: none;
+}
+/*user show page*/
+table.profile {
+	width:100%;
+	margin-bottom: 0;
+}
+td.main {
+	width: 70%;
+	padding: 1em;
+}
+td.sidebar {
+	width: 30%;
+	padding: 1em;
+	verical-align: top;
+	background: #fdd;
+}
+.profile img.gravatar {
+	border: 1px dashed #ffc;
+	margin-bottom: -15px;
 }

@@ -1,5 +1,7 @@
 ThirdRorApp::Application.routes.draw do
 
+  resources :sessions,:only=>[:new,:create,:destroy]
+
   resources :users
   
   root :to=>"pages#home"
@@ -7,6 +9,8 @@ ThirdRorApp::Application.routes.draw do
   match '/about', :to=>'pages#about'
   match '/support', :to=>'pages#support'
   match '/signup', :to=>'users#new'
+  match '/signin', :to=>'sessions#new'
+  match '/signout', :to=>'sessions#destroy'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

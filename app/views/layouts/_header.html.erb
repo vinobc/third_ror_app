@@ -1,5 +1,8 @@
 	<header>
-		<%= link_to logo, root_path %>
+		<%= link_to logo, root_path %> 
+		<% if signed_in? %>
+		<span class="user_name">Welcome <%= "#{current_user.name}" %> !</span> 
+		<% end %>
 		<nav class="round">
 			<ul>
 				<li><%= link_to "Home", root_path %></li>

@@ -1,8 +1,10 @@
 ThirdRorApp::Application.routes.draw do
 
   resources :sessions,:only=>[:new,:create,:destroy]
+  resources :tinyposts, :only=>[:create,:destroy]
 
   resources :users
+  
   
   root :to=>"pages#home"
   match '/contact', :to=>'pages#contact'

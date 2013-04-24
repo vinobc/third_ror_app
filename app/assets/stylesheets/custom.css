@@ -124,7 +124,7 @@ div.field, div.actions {
 .field_with_errors {
 	margin-top: 0px;
 	padding: 1px;
-	background-color: red;
+	background-color: maroon;
 	display: table;
 }
 .field_with_errors label {
@@ -132,7 +132,7 @@ div.field, div.actions {
 }
 #error_explanation {
 	width: 400px;
-	border: 2px solid red;
+	border: 2px solid maroon;
 	padding: 7px;
 	padding-bottom: 12px;
 	margin-bottom: 20px;
@@ -143,7 +143,7 @@ div.field, div.actions {
 	padding: 5px 5px 15px;
 	font-size: 12px;
 	margin: -7px;
-	background-color: #c00;
+	background-color: maroon;
 	color: #fff;
 }
 #error_explanation p {

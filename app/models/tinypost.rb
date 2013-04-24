@@ -12,7 +12,7 @@
 class Tinypost < ActiveRecord::Base
   attr_accessible :content
   
-  belogs_to :user
+  belongs_to :user
   
   validates :content, :presence=>true,
                       :length=>{:maximum=>140}

@@ -5,10 +5,19 @@
 				<%= gravatar_for @user, :size=>75 %>
 				<%=@user.name%>
 			</h1>
+			
+			<% if @user.tinyposts.any? %>
+				<table class="tinyposts" summary="user Tinyposts">
+					<%= render @tinyposts %>
+					<%= will_paginate @tinyposts %>
+				</table>
+				<%= will_paginate @tinyposts %>
+			<% end %>
 		</td>
 		<td class="sidebar round">
 			<strong>Name</strong> <%= @user.name %> <br />
-			<strong>URL</strong>  &nbsp;&nbsp;&nbsp;<%= link_to user_path(@user), @user %>
+			<strong>URL</strong>  &nbsp;&nbsp;&nbsp;<%= link_to user_path(@user), @user %><br />
+			<strong>You have</strong> <font color="blue"><strong><%= @user.tinyposts.count %></strong></font> <strong>post(s).</strong>
 		</td>
 	</tr>
 </table>

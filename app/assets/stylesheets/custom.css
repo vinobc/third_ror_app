@@ -110,7 +110,7 @@ td.main {
 td.sidebar {
 	width: 30%;
 	padding: 1em;
-	verical-align: top;
+	vertical-align: top;
 	background: #fdd;
 }
 .profile img.gravatar {
@@ -162,3 +162,47 @@ ul.users li {
 	list-style: none;
 }
 
+/*posts styles*/
+h1.tinypost {
+	margin-bottom: 0.4em;
+}
+table.tinyposts {
+	margin-top: 1em;
+}
+table.tinyposts tr {
+	height: 70px;
+}
+table.tinyposts tr td.gravatar {
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	width: 50px;
+}
+table.tinyposts tr td.tinypost {
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	padding-top: 12px;
+}
+table.tinyposts tr td.tinypost span.timestamp {
+	display: block;
+	font-size: 85%;
+	color: #666;
+}
+div.user_info img {
+	padding-right: 0.1em;
+}
+div.user_info a{
+	text-decoration: none;
+}
+div.user_info span.user_name {
+	position: absolute;
+}
+div.user_info span.tinyposts {
+	font-size: 80%;
+}
+form.new_tinypost {
+	margin-bottom: 2em;
+}
+form.new_tinypost textarea {
+	height: 4em;
+	margin-bottom: 0;
+}

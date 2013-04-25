@@ -15,7 +15,7 @@ group :development do
   gem 'sqlite3'
   gem "rspec-rails","~>2.13.0"
   gem "annotate", "~>2.5.0"
-  gem "faker", "~> 1.1.2"
+  gem "faker", "~> 1.1.2", :require => false
 end
 group :test do
   gem "rspec","~>2.13.0"

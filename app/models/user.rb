@@ -42,7 +42,7 @@ class User < ActiveRecord::Base
   end
   
   def feed
-    Tinypost.where("user_id = ?", id)
+    Tinypost.from_users_followed_by(self)
   end
   
   def following?(followed)

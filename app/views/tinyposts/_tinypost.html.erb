@@ -3,4 +3,13 @@
 		<span class="content"><%= tinypost.content %></span>
 		<span class="timestamp">Posted <%= time_ago_in_words(tinypost.created_at) %> ago.</span>
 	</td>
+	<% user = tinypost.user rescue User.find(tinypost.user_id) %>
+	<% if current_user?(user) %>
+	<td>
+		<%= link_to "remove", tinypost,
+		 						:method=>:delete,
+								:confirm=>"sure?",
+								:title=>tinypost.content %>
+	</td>
+	<% end %>
 </tr>

@@ -6,6 +6,8 @@
 				<%=@user.name%>
 			</h1>
 			
+			<%= render 'follow_form' if signed_in? %>
+			
 			<% if @user.tinyposts.any? %>
 				<table class="tinyposts" summary="user Tinyposts">
 					<%= render @tinyposts %>
@@ -18,6 +20,7 @@
 			<strong>Name</strong> <%= @user.name %> <br />
 			<strong>URL</strong>  &nbsp;&nbsp;&nbsp;<%= link_to user_path(@user), @user %><br />
 			<strong>You have</strong> <font color="blue"><strong><%= @user.tinyposts.count %></strong></font> <strong>post(s).</strong>
+			<%= render 'shared/stats' %>
 		</td>
 	</tr>
 </table>
